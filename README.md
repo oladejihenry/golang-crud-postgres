@@ -1,4 +1,4 @@
-# golang-crud-postgres
+# Golang CRUD API with PostgreSQL
 
 A small REST API for posts built with **Go**, **Gin**, **GORM**, and **PostgreSQL**. Postgres runs in **Docker**; the app reads database settings from environment variables (optionally via a `.env` file using [godotenv](https://github.com/joho/godotenv)).
 
@@ -53,15 +53,15 @@ On first connect, GORM runs `AutoMigrate` for the `Post` model.
 
 ## HTTP API
 
-| Method | Path | Description |
-|--------|------|-------------|
-| GET | `/` | Simple hello message |
-| GET | `/health` | Health check |
-| GET | `/posts` | List all posts |
-| GET | `/posts/:id` | Get one post by ID |
-| POST | `/posts` | Create a post (JSON body) |
-| PUT | `/posts/:id` | Update title and content |
-| DELETE | `/posts/:id` | Delete a post |
+| Method | Path         | Description               |
+| ------ | ------------ | ------------------------- |
+| GET    | `/`          | Simple hello message      |
+| GET    | `/health`    | Health check              |
+| GET    | `/posts`     | List all posts            |
+| GET    | `/posts/:id` | Get one post by ID        |
+| POST   | `/posts`     | Create a post (JSON body) |
+| PUT    | `/posts/:id` | Update title and content  |
+| DELETE | `/posts/:id` | Delete a post             |
 
 ### Examples
 
